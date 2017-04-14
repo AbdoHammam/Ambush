@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ambush.loginActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:weightSum="1"
+        android:id="@+id/RL"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintTop_toTopOf="@+id/activity_home"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_home"
+        app:layout_constraintRight_toRightOf="@+id/activity_home"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_home"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/pic"
+            android:id="@+id/imageView"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="\tUsername : "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="@+id/imageView"
+            android:layout_alignTop="@+id/editText2"
+            android:layout_toStartOf="@+id/editText2"
+            android:id="@+id/Uname" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:inputType="textPassword"
+            android:background="#D8D8D8"
+            android:ems="10"
+            android:id="@+id/editText3"
+            app:layout_constraintTop_toBottomOf="@+id/editText2"
+            app:layout_constraintLeft_toRightOf="@+id/Pword"
+            android:layout_below="@+id/editText2"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_marginTop="21dp" />
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:text="\tPassword : "
+            android:textColor="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="@+id/imageView"
+            android:layout_alignTop="@+id/editText3"
+            android:layout_toStartOf="@+id/editText3"
+            android:id="@+id/Pword" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintLeft_toRightOf="@+id/Pword"
+            android:background="#D8D8D8"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_marginEnd="18dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:background="#0A0A2A"
+            android:ems="7"
+            android:textAllCaps="false"
+            android:layout_marginTop="28dp"
+            android:id="@+id/Register"
+            app:layout_constraintTop_toBottomOf="@+id/editText3"
+            app:layout_constraintLeft_toLeftOf="@+id/editText3"
+            android:layout_below="@+id/login"
+            android:layout_alignStart="@+id/login" />
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:background="#0A0A2A"
+            android:ems="7"
+            android:textAllCaps="false"
+            android:layout_marginTop="27dp"
+            android:id="@+id/login"
+            android:layout_below="@+id/Pword"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

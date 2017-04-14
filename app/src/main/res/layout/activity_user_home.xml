@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ambush.userHomeActivity">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:weightSum="1"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_user_home"
+        app:layout_constraintTop_toTopOf="@+id/activity_user_home"
+        app:layout_constraintRight_toRightOf="@+id/activity_user_home"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_user_home"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/pic"
+            android:id="@+id/imageView"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:contentDescription="@string/gamelogo" />
+        <Button
+            android:text="@string/start_single_game"
+            android:textAllCaps="false"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:textColor="#FFFFFF"
+            android:background="#0A0A2A"
+            android:id="@+id/SGame"
+            tools:layout_editor_absoluteX="52dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="60dp" />
+        <Button
+            android:text="@string/scoreboard"
+            android:textAllCaps="false"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:textColor="#FFFFFF"
+            android:background="#0A0A2A"
+            android:id="@+id/SBoard"
+            tools:layout_editor_absoluteX="52dp"
+            android:layout_below="@+id/multiGame"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="5dp" />
+        <Button
+            android:text="@string/get_a_new_weapon"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="#0A0A2A"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:id="@+id/GetWeapon"
+            tools:layout_editor_absoluteX="52dp"
+            android:layout_below="@+id/SBoard"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="5dp" />
+        <Button
+            android:text="@string/start_multiplayer_game"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="#0A0A2A"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:id="@+id/multiGame"
+            tools:layout_editor_absoluteX="52dp"
+            android:layout_below="@+id/SGame"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="5dp" />
+        <Button
+            android:text="@string/exit"
+            android:textAllCaps="false"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:textColor="#FFFFFF"
+            android:background="#0A0A2A"
+            android:id="@+id/Exit"
+            tools:layout_editor_absoluteX="52dp"
+            android:layout_below="@+id/GetWeapon"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="@string/tcurrent_score"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:id="@+id/textView2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="200dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignStart="@+id/SGame" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

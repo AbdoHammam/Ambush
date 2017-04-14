@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="apps.ambush">
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <permission
+        android:name="apps.ambush.maps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ambush1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name="ambush.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ambush.loginActivity" />
+        <activity android:name="ambush.userHomeActivity" />
+        <activity android:name="ambush.weaponsActivity" />
+        <activity android:name="ambush.registerActivity" />
+        <activity android:name="ambush.continueRegisterActivity" />
+        <activity android:name="ambush.purchaseWeaponActivity" />
+        <activity android:name="ambush.scoreboardActivity" />
+        <activity android:name="ambush.gameActivity" />
+        <activity android:name="ambush.userProfileActivity" />
+        <activity android:name="ambush.gangActivity"/>
+    </application>
+
+</manifest>

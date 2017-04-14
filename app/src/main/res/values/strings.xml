@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Ambush</string>
+    <string name="get_a_new_weapon">Get a new weapon</string>
+    <string name="start_single_game">Start Single Game</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="start_multiplayer_game">Start multiplayer game</string>
+    <string name="exit">Exit</string>
+    <string name="tcurrent_score">\tCurrent score :</string>
+    <string name="gamelogo">gameLogo</string>
+    <string name="player_name">Player name</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="total_play">Total Play :</string>
+    <string name="total_victory">Total Victory :</string>
+    <string name="total_defeat">Total Defeat :</string>
+    <string name="total_escape">Total Escape :</string>
+    <string name="total_counterattack">Total Counterattack :</string>
+    <string name="coins">Coins :</string>
+    <string name="points">Points :</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="player_weapons">PlayerWeapons</string>
+    <string name="attack">Attack</string>
+    <string name="weaponname">weaponName</string>
+    <string name="weaponaccuracy">weaponAccuracy</string>
+    <string name="weapondamage">weaponDamage</string>
+    <string name="weaponrange">weaponRange</string>
+    <string name="weaponprice">weaponPrice</string>
+    <string name="weaponlose_after_death">weaponLose After death</string>
+</resources>
